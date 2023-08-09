@@ -10,26 +10,24 @@
   <body>
     <!-- menu mobile  -->
     <div class="mobile-menu">
-      <svg class="icon mobile-menu__icon" width="16" height="12">
-        <use href="./images/icons.svg#close"></use>
-      </svg>
+      <div class="mobile-menu__footer">
+        <a href="#" class="mobile-menu__logo link">
+          <svg class="header__icon-logo icon" width="16" height="12">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <svg class="icon mobile-menu__icon" width="16" height="12">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </div>
       <ul class="mobile-menu__list">
         <li class="mobile-menu__item">
           <a
             class="link mobile-menu__link mobile-active"
-            href="./index.html"
+            href="#"
             target="_self"
             rel="noopener noreferrer"
-            >Estudio</a
-          >
-        </li>
-        <li class="mobile-menu__item">
-          <a
-            class="link mobile-menu__link"
-            href="portafolio.html"
-            target="_self"
-            rel="noopener noreferrer"
-            >Portafolio</a
+            >Home</a
           >
         </li>
         <li class="mobile-menu__item">
@@ -38,43 +36,61 @@
             href="#"
             target="_self"
             rel="noopener noreferrer"
-            >Contactos</a
+            >How it’s made?</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a
+            class="link mobile-menu__link"
+            href="#"
+            target="_self"
+            rel="noopener noreferrer"
+            >Our products</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a
+            class="link mobile-menu__link"
+            href="#"
+            target="_self"
+            rel="noopener noreferrer"
+            >Contact</a
           >
         </li>
       </ul>
-      <div class="mobile-menu__contact-container">
-        <a
-          class="link mobile-menu__contact"
-          href="tel:+525555296000"
-          target="_blank"
-          rel="noopener noreferrer"
-          >+52 55 5529 6000</a
-        >
-        <a
-          class="link mobile-menu__contact"
-          href="mailto:info@devstudio.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          info@devstudio.com</a
-        >
-      </div>
-      <ul class="mobile-menu__social">
-        <li class="mobile-menu__item-social">
-          <a href="#" class="link mobile-menu__social-link">Instagram</a>
-        </li>
-        <li class="mobile-menu__item-social">
-          <a href="#" class="link mobile-menu__social-link">Twitter</a>
-        </li>
-        <li class="mobile-menu__item-social">
-          <a href="#" class="link mobile-menu__social-link">Facebook</a>
-        </li>
-        <li class="mobile-menu__item-social">
-          <a href="#" class="link mobile-menu__social-link">Linkedin</a>
-        </li>
-      </ul>
+      <button type="button" class="mobile-menu__button button">
+        Buy now >
+      </button>
     </div>
-    <header></header>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="header__logo link">
+          <svg class="header__icon-logo icon" width="16" height="12">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link link">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link link">How it’s made?</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link link">Our products</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link link">Contact</a>
+          </li>
+        </ul>
+        <div class="header__slide">
+          <svg class="header__icon-slice icon" width="16" height="12">
+            <use href="./images/icons.svg#icon-menu-mobile"></use>
+          </svg>
+        </div>
+        <button type="button" class="header__button button">Buy now ></button>
+      </div>
+    </header>
     <main>
       <section>
         <div>
@@ -83,4 +99,12 @@
       </section>
     </main>
   </body>
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </html>

@@ -1,0 +1,64 @@
+.header {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+        background-color: $principal-color;
+        height: fit-content;
+        @include onlyTablet {
+            align-items: center;
+
+        }
+    }
+
+    &__logo {
+        @include onlyTablet {
+            flex-grow: 1;
+        }
+    }
+
+    &__icon-logo {
+        fill: $secondary-color;
+        width: 60px;
+        height: 65px;
+    }
+
+    &__list {
+        display: none;
+        @include desktop {
+            display: flex;
+            gap: 28px;
+        }
+    }
+
+    &__link {
+        // font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__slide {
+        &:hover {
+            cursor: pointer;
+        }
+        @include desktop {
+            display: none;
+        };
+    }
+    &__icon-slice {
+        fill: #fff;
+        width: 32px;
+        height: 32px;
+    }
+    &__button {
+        display: none;
+        @include onlyTablet {
+            margin-left: 32px;
+        }
+        @include tablet {
+            display: block;
+        }
+    }
+
+}   
