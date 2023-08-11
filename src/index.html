@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ice Cream</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800;1,900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
@@ -59,7 +69,7 @@
         </li>
       </ul>
       <button type="button" class="mobile-menu__button button">
-        gi Buy now >
+        Buy now >
       </button>
     </div>
     <header class="header section">
@@ -93,7 +103,99 @@
     </header>
     <main>
       <section class="hero section">
-        <div class="container"></div>
+        <div class="container hero__container">
+          <div class="hero__cont-title">
+            <h1 class="hero__title">
+              ice cream made with <span class="hero__title-span">pasion</span>
+            </h1>
+            <div class="hero__cont-buttons">
+              <button
+                type="button"
+                class="hero__button button button--transparent"
+              >
+                Products
+              </button>
+              <a href="#" class="hero__link-made link">How it's made?</a>
+            </div>
+            <div class="hero__cont-description">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/heroplate-desktop.png    1x,
+                    ./images/heroplate-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/heroplate-tablet.png    1x,
+                    ./images/heroplate-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  srcset="
+                    ./images/heroplate-tablet.png    1x,
+                    ./images/heroplate-tablet@2x.png 2x
+                  "
+                  src="./images/heroplate-tablet.png"
+                  width="450"
+                  alt="ice-cream"
+                  loading="lazy"
+                  class="hero__img-small"
+                />
+              </picture>
+              <div class="hero__description">
+                <p class="hero__p">
+                  Indulge in a scoop of ice cream made with passion and treat
+                  your taste buds to an unforgettable experience!
+                </p>
+                <svg class="hero__icon-arrow icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="hero__cont-img">
+            <svg class="hero__icon-group1 icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-group-svg-mobile1"></use>
+            </svg>
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="
+                  ./images/heroimg-desktop.png    1x,
+                  ./images/heroimg-desktop@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/heroimg-tablet.png    1x,
+                  ./images/heroimg-tablet@2x.png 2x
+                "
+              />
+              <img
+                srcset="
+                  ./images/heroimg-mobile.png    1x,
+                  ./images/heroimg-mobile@2x.png 2x
+                "
+                src="./images/heroimg-mobile.png"
+                width="450"
+                alt="ice-cream"
+                loading="lazy"
+                class="hero__img"
+              />
+            </picture>
+            <svg class="hero__icon-group2 icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-group-svg-mobile2"></use>
+            </svg>
+          </div>
+          <div class="hero__counts">
+            <p class="hero__cafes">cafes</p>
+            <p class="hero__food-trucks">food trucks</p>
+          </div>
+        </div>
       </section>
       <section class="products section">
         <div class="container products__container">
