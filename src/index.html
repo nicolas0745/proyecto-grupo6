@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800;1,900&family=Seymour+One&display=swap"
       rel="stylesheet"
@@ -42,7 +38,7 @@
         </li>
         <li class="mobile-menu__item">
           <a
-            class="link mobile-menu__link"
+            class="link mobile-menu__link mobile-menu__link--black"
             href="#"
             target="_self"
             rel="noopener noreferrer"
@@ -104,8 +100,13 @@
     <main>
       <section class="hero section">
         <div class="container hero__container">
+          <img
+            src="./images/svg-desktop.png"
+            alt="vectorimg"
+            class="hero__vector-img"
+          />
           <div class="hero__cont-title">
-            <h1 class="hero__title">
+            <h1 class="hero__title" loading="lazy">
               ice cream made with <span class="hero__title-span">pasion</span>
             </h1>
             <div class="hero__cont-buttons">
@@ -160,6 +161,7 @@
             <svg class="hero__icon-group1 icon" width="16" height="12">
               <use href="./images/icons.svg#icon-group-svg-mobile1"></use>
             </svg>
+            <!-- <div class="hero__img-princ-cont"> -->
             <picture>
               <source
                 media="(min-width:1200px)"
@@ -187,8 +189,12 @@
                 class="hero__img"
               />
             </picture>
+            <!-- </div> -->
             <svg class="hero__icon-group2 icon" width="16" height="12">
               <use href="./images/icons.svg#icon-group-svg-mobile2"></use>
+            </svg>
+            <svg class="hero__icon-addt icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-aditional-vector-hero"></use>
             </svg>
           </div>
           <div class="hero__counts">
