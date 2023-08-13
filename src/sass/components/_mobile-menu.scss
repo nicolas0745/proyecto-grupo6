@@ -42,6 +42,9 @@
     &__item:not(:last-child) {
         margin-bottom: 32px;
     }
+    // &__item:nth-child(2) {
+    //     color: #000;
+    // }
     &__link{
         color: $font-color;
         font-size: 32px;
@@ -49,6 +52,9 @@
         font-weight: 700;
         line-height: normal;
         // letter-spacing: 0.8px;
+        &--black {
+            color: #000;
+        }
     }
     &__button {
         width: 152px;
