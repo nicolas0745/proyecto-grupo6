@@ -29,8 +29,16 @@
     }
     &__container {
         position: relative;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        @include mobile {
+            // display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
         @include tablet {
-            display: flex;
+            flex-direction: row;
         }
     }
     &__vector-img {
@@ -154,25 +162,32 @@
     &__img {
         width: 177px;
         position: relative;
-        top: 24px;
-        left: 59px;
+        top: 16px;
+        // left: 59px;
+        left: 9px;
+        transform: scale(1.1);
         @include onlyMobile {
             top: 29px;
+            left: 59px;
             width: 218px;
             height: 267px;
             z-index: 20;
         }
+        @include mobile {
+            transform: scale(1);
+        }
         @include onlyTablet {
             width: 347px;
             height: 400px;
-            top: 42px;
+            top: 26px;
             left: 33px;
+            transform: scale(1.1);
         }
         @include desktop {
             width: 456px;
             height: 560px;
             transform: scale(1.16);
-            top: 45px;
+            top: 48px;
             left: 192px;
         //    object-fit: contain;
         //    width: none;
@@ -191,13 +206,15 @@
     &__icon-group1 {
         position: absolute;
         fill: $secondary-color;
-        width: 127px;
-        height: 49px;
+        width: 126.545px;
+        height: 48.626px;
         bottom: 0;
-        left: 180px;
+        // left: 180px;
+        left: 123px;
         @include mobile {
             width: 130.499px;
             height: 50.571px;
+            left: 180px;
         }
         @include tablet {
             width: 182.237px;
@@ -211,20 +228,19 @@
     &__icon-group2 {
         position: absolute;
         fill: $secondary-color;
-        width: 107px;
-        height: 34px;
+        width: 106.938px;
+        height: 33.838px;
         bottom: 0;
-        left: -14px;
+        // left: -14px;
+        left: -69px;
         @include mobile {
             width: 110.306px;
             height: 33.191px;
-            left: -4px;
+            // left: -4px;
+            left: -6px;
         }
         @include tablet {
             display: none;
-            // width: 110.143px;
-            // height: 34px;
-            // left: -406px;
         }
     }
     &__icon-addt {

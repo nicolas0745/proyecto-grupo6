@@ -291,11 +291,222 @@
       <section class="made section">
         <div class="container"></div>
       </section>
-      <section class="coments section">
-        <div class="container"></div>
+      <section class="comments section">
+        <div class="container comments__container">
+          <div class="comments__cont-imgice">
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="
+                  ./images/icecream-group-desktop.jpg 1x,
+                  ./images/user-desktop@2x.jpg        2x
+                "
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/icecream-group-tablet.jpg    1x,
+                  ./images/icecream-group-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                srcset="
+                  ./images/icecream-group-mobile.jpg    1x,
+                  ./images/icecream-group-mobile@2x.jpg 2x
+                "
+                src="./images/icecream-group-mobile.jpg"
+                width="450"
+                alt="ice-cream"
+                loading="lazy"
+                class="comments__imgice"
+              />
+            </picture>
+          </div>
+          <div class="comments__group">
+            <ul class="comments__list">
+              <li class="comments__item">
+                <div class="comments__img-cont">
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/user-desktop.jpg    1x,
+                        ./images/user-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/user-tablet.jpg    1x,
+                        ./images/user-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/user-mobile.jpg    1x,
+                        ./images/user-mobile@2x.jpg 2x
+                      "
+                      src="./images/user-mobile.jpg"
+                      width="450"
+                      alt="ice-cream"
+                      loading="lazy"
+                      class="comments__img-user"
+                    />
+                  </picture>
+                </div>
+                <p class="comments__description">
+                  I love visiting your cafe. You prepare the most delicious ice
+                  cream in Los Angeles! In addition, you have beautiful serving,
+                  cozy atmosphere and polite staff.
+                </p>
+                <h3 class="comments__name">Emily, Los Angeles</h3>
+              </li>
+              <li class="comments__item"></li>
+              <li class="comments__item"></li>
+            </ul>
+            <div class="comments__slider">
+              <div class="comments__opt"></div>
+              <div class="comments__opt"></div>
+              <div class="comments__opt"></div>
+            </div>
+            <!-- <form action="">
+              <input
+                type="radio"
+                name="options"
+                id="comment1"
+                class="comments__option"
+              />
+              <input
+                type="radio"
+                name="options"
+                id="comment2"
+                class="comments__option"
+              />
+              <input
+                type="radio"
+                name="options"
+                id="comment3"
+                class="comments__option"
+              />
+            </form> -->
+          </div>
+        </div>
       </section>
       <section class="locations section">
-        <div class="container"></div>
+        <div class="container locations__container">
+          <ul class="locations__list">
+            <li class="locations__item card">
+              <h2 class="card__title">CAFE</h2>
+              <div class="card__section">
+                <h3 class="card__description card__description--city">
+                  Chicago
+                </h3>
+                <a href="#" class="card__description card__description--adress"
+                  >10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a
+                >
+              </div>
+              <div class="card__section">
+                <h3 class="card__description">Monday - Friday</h3>
+                <p class="card__description card__description--hours">
+                  06:00 AM - 10:00 PM
+                </p>
+                <h3 class="card__description">Saturday - Sunday</h3>
+                <p class="card__description card__description--hours">
+                  08:00 AM - 16:00 PM
+                </p>
+              </div>
+              <div class="card__section">
+                <a
+                  href="tel:+610383766284"
+                  class="card__description card__description--contact"
+                  >+61(0) 383 766 284</a
+                >
+                <a
+                  href="mailto:noreply@envato.com"
+                  class="card__description card__description--contact"
+                  >noreply@envato.com</a
+                >
+              </div>
+            </li>
+            <li class="locations__item card">
+              <h2 class="card__title">FOODTRUCK</h2>
+              <div class="card__section">
+                <h3 class="card__description card__description--city">
+                  Los Angeles
+                </h3>
+                <a href="#" class="card__description card__description--adress"
+                  >1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a
+                >
+              </div>
+              <div class="card__section">
+                <h3 class="card__description">Monday - Friday</h3>
+                <p class="card__description card__description--hours">
+                  06:00 AM - 10:00 PM
+                </p>
+                <h3 class="card__description">Saturday - Sunday</h3>
+                <p class="card__description card__description--hours">
+                  08:00 AM - 16:00 PM
+                </p>
+              </div>
+              <div class="card__section">
+                <a
+                  href="tel:+610383766284"
+                  class="card__description card__description--contact"
+                  >+61(0) 383 766 284</a
+                >
+                <a
+                  href="mailto:noreply@envato.com"
+                  class="card__description card__description--contact"
+                  >noreply@envato.com</a
+                >
+              </div>
+            </li>
+            <li class="locations__item card">
+              <h2 class="card__title">CAFE</h2>
+              <div class="card__section">
+                <h3 class="card__description card__description--city">
+                  New York
+                </h3>
+                <a href="#" class="card__description card__description--adress"
+                  >726 Sterling Pl, Brooklyn, NY 11222, USA</a
+                >
+              </div>
+              <div class="card__section">
+                <h3 class="card__description">Monday - Friday</h3>
+                <p class="card__description card__description--hours">
+                  06:00 AM - 10:00 PM
+                </p>
+                <h3 class="card__description">Saturday - Sunday</h3>
+                <p class="card__description card__description--hours">
+                  08:00 AM - 16:00 PM
+                </p>
+              </div>
+              <div class="card__section">
+                <a
+                  href="tel:+610383766284"
+                  class="card__description card__description--contact"
+                  >+61(0) 383 766 284</a
+                >
+                <a
+                  href="mailto:noreply@envato.com"
+                  class="card__description card__description--contact"
+                  >noreply@envato.com</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div class="locations__buttons">
+            <button type="button" class="locations__button button">
+              Our Locations >
+            </button>
+            <button
+              type="button"
+              class="locations__button button button--transparent"
+            >
+              Franchise >
+            </button>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer section">
