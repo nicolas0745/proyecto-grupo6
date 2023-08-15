@@ -3,7 +3,14 @@ body {
     color: $font-color;
     width: 100vw;
     background-image: url(../images/background-mobile.jpg);
+    background-size: contain;
     overflow-x: hidden;
+    @include tablet {
+      background-image: url(../images/background-tablet.jpg);
+    }
+    @include desktop {
+      background-image: url(../images/background-desktop.jpg);
+    }
 }
 
 ::-webkit-scrollbar {
