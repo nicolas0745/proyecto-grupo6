@@ -50,6 +50,9 @@
         fill: #fff;
         width: 32px;
         height: 32px;
+        &:hover {
+            fill: $secondary-color;
+        }
     }
     &__button {
         display: none;

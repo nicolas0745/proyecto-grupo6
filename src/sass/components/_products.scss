@@ -90,9 +90,17 @@
 }
 
 .product {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 420px;
+    @include mobile {
+        height: 428px;
+    }
+    @include desktop {
+        height: 536px;
+    }
     &__translate {
         transform: translateY(-110px);
         display: flex;
@@ -169,9 +177,25 @@
         line-height: 1.76;
         letter-spacing: 0.56px;
     }
+    &__arrow {
+        position: absolute;
+        bottom: 0;
+        @include tablet {
+            bottom: 12px;
+        }
+        @include desktop {
+            bottom: 40px;
+        }
+    }
     &__icon {
         width: 40px;
         height: 16px;
         margin-bottom: 16px;
+        // @include tablet {
+        //     transform: translateY(-58px);
+        // }
+        // @include desktop {
+        //     transform: translateY(-126px)
+        // }
     }
 }
