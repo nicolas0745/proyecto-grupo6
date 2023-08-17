@@ -1,9 +1,16 @@
 body {
-//     font-family: $principal-font;
+    font-family: $principal-font;
     color: $font-color;
     width: 100vw;
     background-image: url(../images/background-mobile.jpg);
+    background-size: contain;
     overflow-x: hidden;
+    @include tablet {
+      background-image: url(../images/background-tablet.jpg);
+    }
+    @include desktop {
+      background-image: url(../images/background-desktop.jpg);
+    }
 }
 
 ::-webkit-scrollbar {
@@ -20,6 +27,9 @@ body {
   padding: 0; 
 }
 
+a {
+  text-decoration: none;
+}
 
 ul {
     list-style: none;
@@ -54,11 +64,25 @@ ul {
   .button {
     border: none;
     background-color: $secondary-color;
+    font-family: $principal-font;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
     border-radius: 10px;
+    color: #000;
+    font-style: normal;
     padding: 12px 36px;
     &:hover {
         cursor: pointer;
-        background-color: #0A8817;
+        background-color: $hover-color;
+    }
+    &--transparent {
+      background-color: transparent;
+      border: 2px solid $secondary-color;
+      &:hover {
+        background-color: transparent;
+        border-color: $hover-color;
+      }
     }
   }
 

@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ice Cream</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800;1,900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- menu mobile  -->
     <div class="mobile-menu">
       <div class="mobile-menu__footer">
         <a href="#" class="mobile-menu__logo link">
@@ -32,7 +37,7 @@
         </li>
         <li class="mobile-menu__item">
           <a
-            class="link mobile-menu__link"
+            class="link mobile-menu__link mobile-menu__link--black"
             href="#"
             target="_self"
             rel="noopener noreferrer"
@@ -59,7 +64,7 @@
         </li>
       </ul>
       <button type="button" class="mobile-menu__button button">
-        gi Buy now >
+        Buy now >
       </button>
     </div>
     <header class="header section">
@@ -93,11 +98,112 @@
     </header>
     <main>
       <section class="hero section">
-        <div class="container"></div>
+        <div class="container hero__container">
+          <img
+            src="./images/svg-desktop.png"
+            alt="vectorimg"
+            class="hero__vector-img"
+          />
+          <div class="hero__cont-title">
+            <h1 class="hero__title" loading="lazy">
+              ice cream made with <span class="hero__title-span">pasion</span>
+            </h1>
+            <div class="hero__cont-buttons">
+              <button
+                type="button"
+                class="hero__button button button--transparent"
+              >
+                Products
+              </button>
+              <a href="#" class="hero__link-made link">How it's made?</a>
+            </div>
+            <div class="hero__cont-description">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/heroplate-desktop.png    1x,
+                    ./images/heroplate-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/heroplate-tablet.png    1x,
+                    ./images/heroplate-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  srcset="
+                    ./images/heroplate-tablet.png    1x,
+                    ./images/heroplate-tablet@2x.png 2x
+                  "
+                  src="./images/heroplate-tablet.png"
+                  width="450"
+                  alt="ice-cream"
+                  loading="lazy"
+                  class="hero__img-small"
+                />
+              </picture>
+              <div class="hero__description">
+                <p class="hero__p">
+                  Indulge in a scoop of ice cream made with passion and treat
+                  your taste buds to an unforgettable experience!
+                </p>
+                <svg class="hero__icon-arrow icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="hero__cont-img">
+            <svg class="hero__icon-group1 icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-group-svg-mobile1"></use>
+            </svg>
+            <!-- <div class="hero__img-princ-cont"> -->
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="
+                  ./images/heroimg-desktop.png    1x,
+                  ./images/heroimg-desktop@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/heroimg-tablet.png    1x,
+                  ./images/heroimg-tablet@2x.png 2x
+                "
+              />
+              <img
+                srcset="
+                  ./images/heroimg-mobile.png    1x,
+                  ./images/heroimg-mobile@2x.png 2x
+                "
+                src="./images/heroimg-mobile.png"
+                width="450"
+                alt="ice-cream"
+                loading="lazy"
+                class="hero__img"
+              />
+            </picture>
+            <!-- </div> -->
+            <svg class="hero__icon-group2 icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-group-svg-mobile2"></use>
+            </svg>
+            <svg class="hero__icon-addt icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-aditional-vector-hero"></use>
+            </svg>
+          </div>
+          <div class="hero__counts">
+            <p class="hero__cafes">cafes</p>
+            <p class="hero__food-trucks">food trucks</p>
+          </div>
+        </div>
       </section>
       <section class="products section">
         <div class="container products__container">
-          <!-- nicolas -->
           <h4 class="products__subtitle">100% natural</h4>
           <h2 class="products__title">products</h2>
           <ul class="products__list">
@@ -253,15 +359,239 @@
         
         
       </section>
-      <section class="coments section">
-        <div class="container"></div>
+      <section class="comments section">
+        <div class="container comments__container">
+          <div class="comments__cont-imgice">
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="
+                  ./images/icecream-group-desktop.jpg 1x,
+                  ./images/user-desktop@2x.jpg        2x
+                "
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/icecream-group-tablet.jpg    1x,
+                  ./images/icecream-group-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                srcset="
+                  ./images/icecream-group-mobile.jpg    1x,
+                  ./images/icecream-group-mobile@2x.jpg 2x
+                "
+                src="./images/icecream-group-mobile.jpg"
+                width="450"
+                alt="ice-cream"
+                loading="lazy"
+                class="comments__imgice"
+              />
+            </picture>
+          </div>
+          <div class="comments__group">
+            <ul class="comments__list">
+              <li class="comments__item">
+                <div class="comments__img-cont">
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/user-desktop.jpg    1x,
+                        ./images/user-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/user-tablet.jpg    1x,
+                        ./images/user-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/user-mobile.jpg    1x,
+                        ./images/user-mobile@2x.jpg 2x
+                      "
+                      src="./images/user-mobile.jpg"
+                      width="450"
+                      alt="ice-cream"
+                      loading="lazy"
+                      class="comments__img-user"
+                    />
+                  </picture>
+                </div>
+                <p class="comments__description">
+                  I love visiting your cafe. You prepare the most delicious ice
+                  cream in Los Angeles! In addition, you have beautiful serving,
+                  cozy atmosphere and polite staff.
+                </p>
+                <h3 class="comments__name">Emily, Los Angeles</h3>
+              </li>
+              <li class="comments__item"></li>
+              <li class="comments__item"></li>
+            </ul>
+            <div class="comments__slider">
+              <div class="comments__opt"></div>
+              <div class="comments__opt"></div>
+              <div class="comments__opt"></div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="locations section">
-        <div class="container"></div>
+        <div class="container locations__container">
+          <ul class="locations__list">
+            <li class="locations__item card">
+              <h2 class="card__title">CAFE</h2>
+              <div class="card__section">
+                <h3 class="card__description card__description--city">
+                  Chicago
+                </h3>
+                <a href="#" class="card__description card__description--adress"
+                  >10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a
+                >
+              </div>
+              <div class="card__section">
+                <h3 class="card__description">Monday - Friday</h3>
+                <p class="card__description card__description--hours">
+                  06:00 AM - 10:00 PM
+                </p>
+                <h3 class="card__description">Saturday - Sunday</h3>
+                <p class="card__description card__description--hours">
+                  08:00 AM - 16:00 PM
+                </p>
+              </div>
+              <div class="card__section">
+                <a
+                  href="tel:+610383766284"
+                  class="card__description card__description--contact"
+                  >+61(0) 383 766 284</a
+                >
+                <a
+                  href="mailto:noreply@envato.com"
+                  class="card__description card__description--contact"
+                  >noreply@envato.com</a
+                >
+              </div>
+            </li>
+            <li class="locations__item card">
+              <h2 class="card__title">FOODTRUCK</h2>
+              <div class="card__section">
+                <h3 class="card__description card__description--city">
+                  Los Angeles
+                </h3>
+                <a href="#" class="card__description card__description--adress"
+                  >1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a
+                >
+              </div>
+              <div class="card__section">
+                <h3 class="card__description">Monday - Friday</h3>
+                <p class="card__description card__description--hours">
+                  06:00 AM - 10:00 PM
+                </p>
+                <h3 class="card__description">Saturday - Sunday</h3>
+                <p class="card__description card__description--hours">
+                  08:00 AM - 16:00 PM
+                </p>
+              </div>
+              <div class="card__section">
+                <a
+                  href="tel:+610383766284"
+                  class="card__description card__description--contact"
+                  >+61(0) 383 766 284</a
+                >
+                <a
+                  href="mailto:noreply@envato.com"
+                  class="card__description card__description--contact"
+                  >noreply@envato.com</a
+                >
+              </div>
+            </li>
+            <li class="locations__item card">
+              <h2 class="card__title">CAFE</h2>
+              <div class="card__section">
+                <h3 class="card__description card__description--city">
+                  New York
+                </h3>
+                <a href="#" class="card__description card__description--adress"
+                  >726 Sterling Pl, Brooklyn, NY 11222, USA</a
+                >
+              </div>
+              <div class="card__section">
+                <h3 class="card__description">Monday - Friday</h3>
+                <p class="card__description card__description--hours">
+                  06:00 AM - 10:00 PM
+                </p>
+                <h3 class="card__description">Saturday - Sunday</h3>
+                <p class="card__description card__description--hours">
+                  08:00 AM - 16:00 PM
+                </p>
+              </div>
+              <div class="card__section">
+                <a
+                  href="tel:+610383766284"
+                  class="card__description card__description--contact"
+                  >+61(0) 383 766 284</a
+                >
+                <a
+                  href="mailto:noreply@envato.com"
+                  class="card__description card__description--contact"
+                  >noreply@envato.com</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div class="locations__buttons">
+            <button type="button" class="locations__button button">
+              Our Locations >
+            </button>
+            <button
+              type="button"
+              class="locations__button button button--transparent"
+            >
+              Franchise >
+            </button>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer section">
-      <div class="container footer__container"></div>
+      <div class="container footer__container">
+        <div class="footer__principal">
+          <div class="footer__text-cont">
+            <h3 class="footer__text">homemade ice cream made</h3>
+            <h2 class="footer__text">with passion</h2>
+          </div>
+          <div class="footer__social">
+            <div class="footer__social-icons">
+              <a href="#" class="footer__social-icon link">
+                <svg class="footer__icon icon-social" width="16" height="12">
+                  <use href="./images/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-icon link">
+                <svg class="footer__icon icon-social" width="16" height="12">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-icon link">
+                <svg class="footer__icon icon-social" width="16" height="12">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+            <a class="footer__social-text" href="tel:61(0)383766284"
+              >Feel free to contact
+              <span class="footer__social-text--span"
+                >+61 (0) 383 766 284</span
+              ></a
+            >
+          </div>
+        </div>
+        <p class="footer__rigths">© 2022 - IceCream. All Rights Reserved.</p>
+      </div>
     </footer>
   </body>
   <script
