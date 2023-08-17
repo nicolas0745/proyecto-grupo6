@@ -1,184 +1,132 @@
 .footer {
-    background-color: #84A178;
-
-    &__container {
-        background-color: #84A178;
-        width: 320px;
-        padding: 0px;
-        @include onlyMobile {
-                width: 480px;
-                background-color: #84A178;
-                padding: 0px;
-            }
+    background-color: $principal-color;
+    @include tablet {
+        padding-top: 35px;
+    }
+    @include desktop {
+        padding-top: 44px;
+    }
+    &__principal {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+        border-bottom: 1px solid $white-color;
         @include tablet {
-            width: 768px;
-            background-color: #84A178;
-            padding: 0px;
+            flex-direction: row;
+            padding-bottom: 32px;
         }
-
         @include desktop {
-            width: 1200px;
-            background-color: #84A178;
-            padding: 0px;
+            padding-bottom: 60px;
         }
     }
-
-    &__title {
-        color: #FCFCFC;
+    &__text-cont {
+        padding-bottom: 60px;
+        @include tablet {
+            padding-bottom: 0;
+        }
+    }
+    &__text {
+        color: $white-color;
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
-        height: 42px;
-        padding-left: 20px;
-        width: 200px;
-        @include tablet{
+        margin-bottom: 16px;
+        width: 232px;
+        &:nth-child(2) {
+            font-size: 34px;
+            letter-spacing: 1.36px;
+            width: 200px;
+            @include tablet {
+                font-size: 48px;
+            }
+            @include desktop {
+                font-weight: 700;
+                font-size: 58px;
+                width: 500px;
+            }
+        }
+        @include tablet {
             font-size: 26px;
+            letter-spacing: 1.04px;
             width: 352px;
+            margin-bottom: 0;
         }
         @include desktop {
-            width: 1200px;
-            font-size: 30px;
+            font-size: 34px;
+            width: 600px;
+            font-weight: 400;
         }
     }
-
-    &__subtitle {
-        color: #FCFCFC;
-        font-size: 34px;
+    &__social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @include tablet {
+            width: 100%;
+            align-items: flex-end;
+            justify-content: flex-end;
+            padding-bottom: 28px;
+        }
+        @include desktop {
+            padding-bottom: 0;
+        }
+    }
+    &__social-icons {
+        margin-bottom: 20px;
+        display: flex;
+        gap: 20px;
+    }
+    &__rigths {
+        color: #7A7A7A;
+        text-align: center;
+        font-size: 14px;
         font-style: normal;
         font-weight: 700;
-        line-height: normal;
-        letter-spacing: 1.36px;
-        margin: 0;
-        margin-top: 14px;
-        height: 76px;
-        padding-left: 20px;
-        width: 200px;
+        line-height: 1.52;
+        padding: 20px;
+        width: 197px;
+        margin: 0 auto;
         @include tablet {
-            font-size: 48px;
-            width: 352px;
-            padding-top: 10px;
+            width: 400px;
         }
         @include desktop {
-            width: 1200px;
-            font-size: 58px;
+            font-size: 16px;
         }
     }
-}
-
-.section-listfooter {
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-top: 60px;
-}
-
-.listfooter {
-
-    &__svg {
-        width: 34px;
-        height: 34px;
-        border-radius: 17PX;
-        background-color: #F8D24E;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__iconsvg {
-        width: 20px;
-        height: 20px;
-        fill: #84A178;
-
-        &:is(:hover, :focus) {
-            fill: #FFF;
-        }
-    }
-
-}
-
-.container-footer-contacts {
-    display: flex;
-    gap: 5px;
-    justify-content: flex-end;
-    padding-right: 20px;
-    padding-bottom: 40px;
-    @include tablet {
-        margin-left: 443px;
-    }
-    @include desktop {
-        margin-left: 920px;
-    }
-}
-
-.contacts {
-
-    &__feel {
-        color: #131313;
+    &__social-text {
+        color: $black-color;
         text-align: right;
         font-size: 12px;
         font-style: normal;
         font-weight: 700;
-        line-height: 186%;
-        /* 22.32px */
-        @include tablet {
-            font-size: 14px;
-            width: 352px;
+        line-height: 1.86;
+        &--span {
+            color: $white-color;
         }
-        @include desktop {
-            font-size: 12px;
-            width: 1200px;
+        &:hover {
+            .footer__social-text--span {
+                color: $secondary-color;
+            }
         }
-    }
 
-    &__telephone {
-        color: #FCFCFC;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 186%;
-        @include tablet {
-            font-size: 14px;
-            width: 352px;
-        }
-        @include desktop {
-            font-size: 12px;
-            width: 1200px;
+    }
+    &__social-icon {
+        width: 34px;
+        height: 34px;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        padding: 5px;
+        &:hover {
+            .icon-social {
+            fill: $white-color;
+            }
         }
     }
 }
-
-.footer-reserved {
-    
-    color: #7A7A7A;
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 152%;
-    width: 150px;
-    /* 21.28px */
-    @include tablet {
-        width: 352px;
-        }
-    @include desktop {
-        width: 497px;
-    }
-}
-
-.reserved {
-    border-top: 1px solid #E1E1E1;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    @include tablet {
-        border-top: 1px solid #E1E1E1;
-    }
-    @include desktop {
-        border-top: 1px solid #E1E1E1;
-    }
-
+.icon-social {
+    fill: $principal-color;
+    width: 24px;
+    height: 24px;
 }

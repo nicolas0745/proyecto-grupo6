@@ -1,0 +1,141 @@
+.comments {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__cont-imgice {
+        width: 280px;
+        height: 130px;
+        overflow: hidden;
+        margin-bottom: 80px;
+        border-radius: 8px;
+        @include mobile {
+            width: 440px;
+            height: 204px;
+        }
+        @include tablet {
+            width: 100%;
+            height: 327px;
+        }
+        @include desktop {  
+            width: 1013px;
+            height: 422px;
+        }
+    }
+    &__imgice {
+        width: 280px;
+        height: 130px;
+        object-fit: cover;
+        transform: scale(1.1);
+        background: url(<path-to-image>), lightgray -14.181px -39.033px / 112.943% 160.051% no-repeat;
+        @include mobile {
+            width: 440px;
+            height: 204px;
+        }
+        @include tablet {
+            width: 100%;
+            height: 327px;
+        }
+        @include desktop {  
+            width: 1013px;
+            height: 422px;
+            transform: none;
+        }
+    }
+    &__group {
+        margin-bottom: 2px;
+    }
+    &__list { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__img-cont {
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    &__img-user {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__description {
+        background-color: $principal-color;
+        width: 280px;
+        border-radius: 10px;
+        padding: 35px 39px; 
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.55;
+        margin-bottom: 32px;
+        @include tablet {
+            width: 100%;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.86;
+            letter-spacing: 0.56px;
+            padding: 28px 80px;
+        }
+        @include desktop {
+            width: 968px;
+            font-size: 16px;
+            letter-spacing: 0.64px;
+        }
+    }
+    &__name {
+        color: #131313;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.86;
+        margin-bottom: 12px;
+        @include tablet {
+            margin-bottom: 32px;
+            font-size: 16px;
+        }
+    }
+    &__slider {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 413px;
+        @include mobile {
+            margin-bottom: 409px;
+        }
+        @include tablet {
+            margin-bottom: 379px;
+        }
+        @include desktop {
+            margin-bottom: 225px;
+        }
+    }
+    &__opt {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        &:hover {
+            cursor: pointer;
+        }
+        &:nth-child(1){
+            background-color: #84A178;
+        }
+        &:nth-child(2) {
+            background-color: #d9d9d9;
+        }
+        &:nth-child(3) {
+            background-color: #d9d9d9;
+        }
+    }
+}

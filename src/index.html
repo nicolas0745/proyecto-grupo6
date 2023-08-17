@@ -14,7 +14,6 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- menu mobile  -->
     <div class="mobile-menu">
       <div class="mobile-menu__footer">
         <a href="#" class="mobile-menu__logo link">
@@ -205,7 +204,6 @@
       </section>
       <section class="products section">
         <div class="container products__container">
-          <!-- nicolas -->
           <h4 class="products__subtitle">100% natural</h4>
           <h2 class="products__title">products</h2>
           <ul class="products__list">
@@ -289,48 +287,310 @@
         </div>
       </section>
       <section class="made section">
-        <div class="container"></div>
+        <div class="container">
+          <div class="made__title">
+            <h2 class="made__title-trad">TRADICION AND LOVE</h2>
+            <h2 class="made__title-how">HOW IT'S MADE</h2>
+          </div>
+
+          <div class="made__second-sec">
+            <div class="made__shadow">
+              <div class="made__img-cont">
+                <img
+                  src="./images/pages-optimizadas/made-cow.jpeg"
+                  alt=" vaca fuente de rica leche"
+                />
+              </div>
+            </div>
+            <div class="made__desc-cont">
+              <p class="made__description">
+                Ice is a place where you will become not only a little happier,
+                but also healthier. Health is the main value for us, and we
+                follow it when creating our handmade desserts.
+              </p>
+              <p class="made__description">
+                We use traditional recipes and 100% natural ingredients. Our
+                products are so natural that they can be given to children from
+                the age of three years. Sweets lovers can expect 55 types of ice
+                cream, 15 types of coffee and 23 milkshakes.
+              </p>
+              <p class="made__description">
+                This is enough to choose ice cream and coffee for any mood!
+              </p>
+              <button type="button" class="button">Read More > </button>
+            </div>
+          </div>
+          <ul class="made__list">
+            <li class="made__item">
+              <div class="made__icon-cont">
+                <svg class="made__list-svg">
+                  <use href="./images/icons.svg#icon-cow"></use>
+                </svg>
+              </div>
+              <h2 class="made__text-siete">721</h2>
+              <h3 class="made__text-conten">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </h3>
+            </li>
+            <li class="made__item">
+              <div class="made__icon-cont">
+                <svg class="made__list-svg">
+                  <use href="./images/icons.svg#icon-weight"></use>
+                </svg>
+              </div>
+              <h2 class="made__text-siete">16Kg</h2>
+              <h3 class="made__text-conten">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </h3>
+            </li>
+            <li class="made__item">
+              <div class="made__icon-cont">
+                <svg class="made__list-svg">
+                  <use href="./images/icons.svg#icon-ice-crema"></use>
+                </svg>
+              </div>
+              <h2 class="made__text-siete">84</h2>
+              <h3 class="made__text-conten">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </h3>
+            </li>
+          </ul>
+        </div>
+        
+        
       </section>
-      <section class="coments section">
-        <div class="container"></div>
+      <section class="comments section">
+        <div class="container comments__container">
+          <div class="comments__cont-imgice">
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="
+                  ./images/icecream-group-desktop.jpg 1x,
+                  ./images/user-desktop@2x.jpg        2x
+                "
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/icecream-group-tablet.jpg    1x,
+                  ./images/icecream-group-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                srcset="
+                  ./images/icecream-group-mobile.jpg    1x,
+                  ./images/icecream-group-mobile@2x.jpg 2x
+                "
+                src="./images/icecream-group-mobile.jpg"
+                width="450"
+                alt="ice-cream"
+                loading="lazy"
+                class="comments__imgice"
+              />
+            </picture>
+          </div>
+          <div class="comments__group">
+            <ul class="comments__list">
+              <li class="comments__item">
+                <div class="comments__img-cont">
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/user-desktop.jpg    1x,
+                        ./images/user-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/user-tablet.jpg    1x,
+                        ./images/user-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/user-mobile.jpg    1x,
+                        ./images/user-mobile@2x.jpg 2x
+                      "
+                      src="./images/user-mobile.jpg"
+                      width="450"
+                      alt="ice-cream"
+                      loading="lazy"
+                      class="comments__img-user"
+                    />
+                  </picture>
+                </div>
+                <p class="comments__description">
+                  I love visiting your cafe. You prepare the most delicious ice
+                  cream in Los Angeles! In addition, you have beautiful serving,
+                  cozy atmosphere and polite staff.
+                </p>
+                <h3 class="comments__name">Emily, Los Angeles</h3>
+              </li>
+              <li class="comments__item"></li>
+              <li class="comments__item"></li>
+            </ul>
+            <div class="comments__slider">
+              <div class="comments__opt"></div>
+              <div class="comments__opt"></div>
+              <div class="comments__opt"></div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="locations section">
-        <div class="container"></div>
+        <div class="container locations__container">
+          <ul class="locations__list">
+            <li class="locations__item card">
+              <h2 class="card__title">CAFE</h2>
+              <div class="card__section">
+                <h3 class="card__description card__description--city">
+                  Chicago
+                </h3>
+                <a href="#" class="card__description card__description--adress"
+                  >10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a
+                >
+              </div>
+              <div class="card__section">
+                <h3 class="card__description">Monday - Friday</h3>
+                <p class="card__description card__description--hours">
+                  06:00 AM - 10:00 PM
+                </p>
+                <h3 class="card__description">Saturday - Sunday</h3>
+                <p class="card__description card__description--hours">
+                  08:00 AM - 16:00 PM
+                </p>
+              </div>
+              <div class="card__section">
+                <a
+                  href="tel:+610383766284"
+                  class="card__description card__description--contact"
+                  >+61(0) 383 766 284</a
+                >
+                <a
+                  href="mailto:noreply@envato.com"
+                  class="card__description card__description--contact"
+                  >noreply@envato.com</a
+                >
+              </div>
+            </li>
+            <li class="locations__item card">
+              <h2 class="card__title">FOODTRUCK</h2>
+              <div class="card__section">
+                <h3 class="card__description card__description--city">
+                  Los Angeles
+                </h3>
+                <a href="#" class="card__description card__description--adress"
+                  >1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a
+                >
+              </div>
+              <div class="card__section">
+                <h3 class="card__description">Monday - Friday</h3>
+                <p class="card__description card__description--hours">
+                  06:00 AM - 10:00 PM
+                </p>
+                <h3 class="card__description">Saturday - Sunday</h3>
+                <p class="card__description card__description--hours">
+                  08:00 AM - 16:00 PM
+                </p>
+              </div>
+              <div class="card__section">
+                <a
+                  href="tel:+610383766284"
+                  class="card__description card__description--contact"
+                  >+61(0) 383 766 284</a
+                >
+                <a
+                  href="mailto:noreply@envato.com"
+                  class="card__description card__description--contact"
+                  >noreply@envato.com</a
+                >
+              </div>
+            </li>
+            <li class="locations__item card">
+              <h2 class="card__title">CAFE</h2>
+              <div class="card__section">
+                <h3 class="card__description card__description--city">
+                  New York
+                </h3>
+                <a href="#" class="card__description card__description--adress"
+                  >726 Sterling Pl, Brooklyn, NY 11222, USA</a
+                >
+              </div>
+              <div class="card__section">
+                <h3 class="card__description">Monday - Friday</h3>
+                <p class="card__description card__description--hours">
+                  06:00 AM - 10:00 PM
+                </p>
+                <h3 class="card__description">Saturday - Sunday</h3>
+                <p class="card__description card__description--hours">
+                  08:00 AM - 16:00 PM
+                </p>
+              </div>
+              <div class="card__section">
+                <a
+                  href="tel:+610383766284"
+                  class="card__description card__description--contact"
+                  >+61(0) 383 766 284</a
+                >
+                <a
+                  href="mailto:noreply@envato.com"
+                  class="card__description card__description--contact"
+                  >noreply@envato.com</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div class="locations__buttons">
+            <button type="button" class="locations__button button">
+              Our Locations >
+            </button>
+            <button
+              type="button"
+              class="locations__button button button--transparent"
+            >
+              Franchise >
+            </button>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer section">
       <div class="container footer__container">
-        <div class="section-footer__footer-one">
-          <h2 class="footer__title">HOMEMADE ICE CREAM MADE</h2>
-          <h5 class="footer__subtitle">WITH PASSION</h5>
-        </div>
-        <div class="section-footer">
-          <ul class="section-listfooter">
-            <li class="listfooter__svg">
-              <svg class="listfooter__iconsvg">
-                <use href="./images/icons.svg#icon-gato"></use>
-              </svg>
-            </li>
-            <li class="listfooter__svg">
-              <svg class="listfooter__iconsvg">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </li>
-            <li class="listfooter__svg">
-              <svg class="listfooter__iconsvg">
-                <use href="./images/icons.svg#icon-telegram"></use>
-              </svg>
-            </li>
-          </ul>
-          <div class="container-footer-contacts">
-            <a class="contacts__contact" href="+61(0)383766284"></a>
-            <p class="contacts__feel">Feel free to contact</p>
-            <p class="contacts__telephone">+61 (0) 383 766 284</p>
+        <div class="footer__principal">
+          <div class="footer__text-cont">
+            <h3 class="footer__text">homemade ice cream made</h3>
+            <h2 class="footer__text">with passion</h2>
           </div>
-          <div class="reserved">
-            <p class="footer-reserved">© 2022 - IceCream. All Rights Reserved.</p>
+          <div class="footer__social">
+            <div class="footer__social-icons">
+              <a href="#" class="footer__social-icon link">
+                <svg class="footer__icon icon-social" width="16" height="12">
+                  <use href="./images/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-icon link">
+                <svg class="footer__icon icon-social" width="16" height="12">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-icon link">
+                <svg class="footer__icon icon-social" width="16" height="12">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+            <a class="footer__social-text" href="tel:61(0)383766284"
+              >Feel free to contact
+              <span class="footer__social-text--span"
+                >+61 (0) 383 766 284</span
+              ></a
+            >
           </div>
         </div>
+        <p class="footer__rigths">© 2022 - IceCream. All Rights Reserved.</p>
       </div>
     </footer>
     <div class="backdrop" data-modal>
@@ -348,7 +608,7 @@
                     </div>
                   </div>
                   <div class="container-title">
-                    <h3 class="card__title">ICE CREAM</h3>
+                    <h3 class="card__textos">ICE CREAM</h3>
                   </div>
                   </h3>
                 </div>
@@ -363,7 +623,7 @@
                     </div>
                   </div>
                   <div class="container-title">
-                    <h3 class="card__title">ICE COFFEE</h3>
+                    <h3 class="card__textos">ICE COFFEE</h3>
                   </div>
                 </div>
               </div>
@@ -377,7 +637,7 @@
                     </div>
                   </div>
                   <div class="container-title">
-                    <h3 class="card__title">MILKSHAKE</h3>
+                    <h3 class="card__textos">MILKSHAKE</h3>
                   </div>
                 </div>
               </div>
@@ -466,12 +726,12 @@
             How it’s made?
           </h3>
         </div>
-        <div class="icon">
-          <svg class="icon__svg">
+        <div class="svg">
+          <svg class="svg__svg">
             <use href="./images/icons.svg#play"></use>
           </svg>
         </div>
-        <p class="icon__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        <p class="svg__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et Lorem ipsum dolor
           sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         </p>
@@ -490,38 +750,38 @@
             </div>
           </div>
         </div>
-        <div class="card">
-          <ul class="card__card">
-            <li class="card__list">
-                <div class="card__text">
-                  <h4 class="card__calories">320</h4>
+        <div class="target">
+          <ul class="target__card">
+            <li class="target__list">
+                <div class="target__text">
+                  <h4 class="target__calories">320</h4>
                 </div>
-              <div class="card__productos">
-                <h5 class="card__product">kcal</h5>
+              <div class="target__productos">
+                <h5 class="target__product">kcal</h5>
               </div>
             </li>
-            <li class="card__list">
-              <div class="card__text">
-                <h4 class="card__calories">4g</h4>
+            <li class="target__list">
+              <div class="target__text">
+                <h4 class="target__calories">4g</h4>
               </div>
-              <div class="card__productos">
-                <h5 class="card__product">Protein...</h5>
-              </div>
-            </li>
-            <li class="card__list">
-              <div class="card__text">
-                <h4 class="card__calories">8,2g</h4>
-              </div>
-              <div class="card__productos">
-                <h5 class="card__product">Fats</h5>
+              <div class="target__productos">
+                <h5 class="target__product">Protein...</h5>
               </div>
             </li>
-            <li class="card__list">
-              <div class="card__text">
-                <h4 class="card__calories">40,4g</h4>
+            <li class="target__list">
+              <div class="target__text">
+                <h4 class="target__calories">8,2g</h4>
               </div>
-              <div class="card__productos">
-                <h5 class="card__product">Carbs</h5>
+              <div class="target__productos">
+                <h5 class="target__product">Fats</h5>
+              </div>
+            </li>
+            <li class="target__list">
+              <div class="target__text">
+                <h4 class="target__calories">40,4g</h4>
+              </div>
+              <div class="target__productos">
+                <h5 class="target__product">Carbs</h5>
               </div>
             </li>
           </ul>
