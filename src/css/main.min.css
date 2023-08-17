@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Montserrat", sans-serif;
   color: #fcfcfc;
@@ -1407,6 +1408,447 @@ ul {
   fill: #84A178;
   width: 24px;
   height: 24px;
+}
+
+.modal {
+  width: 568px;
+  height: 644px;
+  border-radius: 10px;
+  border: 2px solid #F8D24E;
+  background: #FCFCFC;
+}
+.modal__title {
+  color: #131313;
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  padding-bottom: 100px;
+  padding-top: 30px;
+  /* 140% */
+}
+.modal__card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+.one {
+  border-radius: 15px;
+  border: 2px solid #96AF8C;
+  box-shadow: 0px 5.2602739334px 19.726026535px 0px rgba(212, 20, 67, 0.1);
+}
+
+.two {
+  border-radius: 15px;
+  border: 2px solid #EFD478;
+  background: #EFD478;
+  box-shadow: 0px 5.2602739334px 19.726026535px 0px rgba(212, 20, 67, 0.1);
+}
+
+.three {
+  border-radius: 15.781px;
+  border: 2px solid #D6936D;
+  box-shadow: 0px 5.2602739334px 19.726026535px 0px rgba(212, 20, 67, 0.1);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 132px;
+  height: 135px;
+}
+.cards__traslate {
+  transform: translateY(-110px);
+}
+
+.card__back-img {
+  width: 132px;
+  height: 132px;
+  border-radius: 66px;
+  margin-top: 46px;
+}
+.card__back-img--green {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%), #D9D9D9;
+  filter: drop-shadow(0px 5.3421931267px 20.0332221985px rgba(10, 136, 23, 0.25));
+}
+.card__back-img--yellow {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7) 0%, rgba(248, 210, 78, 0.7) 100%), #D9D9D9;
+  filter: drop-shadow(0px 5.4039735794px 20.2649002075px rgba(153, 114, 23, 0.25));
+}
+.card__back-img--orange {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7) 0%, rgba(213, 117, 63, 0.7) 100%), #D9D9D9;
+  fill: linear-gradient(0deg, rgba(213, 117, 63, 0.7) 0%, rgba(213, 117, 63, 0.7) 100%), #D9D9D9;
+  filter: drop-shadow(0px 5.2602739334px 19.726026535px rgba(0, 0, 0, 0.25));
+}
+
+.card-container {
+  width: 132px;
+  height: 132px;
+  border-radius: 66px;
+  overflow: hidden;
+  transform: translateY(-11px);
+  object-fit: contain;
+}
+
+.card__img {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  margin-top: 30px;
+}
+
+.card__textos {
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+
+.container-modal {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 30px;
+}
+
+.modal__container-input {
+  border-radius: 10px;
+  border: 1px solid #84A178;
+  background: rgba(248, 210, 78, 0.1);
+  height: 42px;
+  width: 368px;
+  outline: none;
+  margin-bottom: 16px;
+}
+.modal__input {
+  margin-top: 11px;
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-left: 4px;
+}
+.modal__label {
+  color: #131313;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-left: 16px;
+  /* 19.6px */
+}
+
+.modal-form-message {
+  width: 366px;
+  height: 84px;
+  border-radius: 10px;
+  border: 1px solid #84A178;
+  background: rgba(248, 210, 78, 0.1);
+  outline: none;
+  padding: 16px;
+  resize: none;
+}
+
+.modal-form-message::placeholder {
+  color: #131313;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 19.6px */
+}
+
+.modal-button {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: #F8D24E;
+  width: 121px;
+  height: 42px;
+  margin-top: 10px;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  outline: none;
+}
+
+/*Diseño para ventana modal de Agradecimiento*/
+.container-thanks {
+  width: 568px;
+  height: 668px;
+  border-radius: 10px;
+  border: 2px solid #F8D24E;
+  background: #FCFCFC;
+}
+
+.thanks {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  padding-bottom: 3px;
+}
+.thanks__titlethanks {
+  width: 322px;
+  height: 84px;
+  color: #131313;
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  /* 140% */
+}
+.thanks__subtitlethanks {
+  width: 448px;
+  color: #131313;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 0px;
+  /* 22.4px */
+}
+
+/*Ventana modal ubicacion*/
+.location {
+  width: 568px;
+  height: 458px;
+  border-radius: 10px;
+  border: 2px solid #F8D24E;
+  background: #FCFCFC;
+}
+.location__titlelocation {
+  color: #131313;
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 32px;
+  /* 140% */
+}
+.location__ubication {
+  display: flex;
+  justify-content: center;
+  margin: 32px;
+}
+
+/* Ventana modal del video*/
+.video {
+  width: 568px;
+  height: 449px;
+  border-radius: 10px;
+  border: 2px solid #F8D24E;
+  background: #FCFCFC;
+}
+.video__title {
+  color: #131313;
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 32px;
+  /* 140% */
+}
+
+.svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 448px;
+  height: 205px;
+  border-radius: 10px;
+  background: #000;
+  margin: 32px 60px;
+}
+.svg__svg {
+  width: 36px;
+  height: 36px;
+  fill: #FCFCFC;
+}
+.svg__text {
+  width: 448px;
+  color: #131313;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 32px 60px;
+  /* 22.4px */
+}
+
+/*ventana modal para ingredientes*/
+.ingredients {
+  width: 568px;
+  height: 996px;
+  border-radius: 10px;
+  border: 2px solid #F8D24E;
+  background: #FCFCFC;
+  flex-direction: column;
+  display: flex;
+  padding: 40px;
+}
+.ingredients__title {
+  color: #131313;
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  /* 140% */
+}
+.ingredients__image {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.ingredients__imgcream {
+  width: 132px;
+  height: 132px;
+  border-radius: 66px;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%), #D9D9D9;
+  filter: drop-shadow(0px 5.3421931267px 20.0332221985px rgba(10, 136, 23, 0.25));
+}
+.ingredients__traslate-img {
+  width: 132px;
+  height: 132px;
+  border-radius: 66px;
+  overflow: hidden;
+  transform: translateY(-11px);
+  object-fit: contain;
+}
+
+.target {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  padding: 32px;
+}
+.target__card {
+  display: flex;
+  gap: 20px;
+  padding: 0px;
+}
+.target__list {
+  height: 90px;
+  border-radius: 40px;
+  border: 2px solid #9CBE8F;
+  list-style: none;
+}
+.target__text {
+  width: 53px;
+  height: 53px;
+  stroke-width: 2px;
+  border-radius: 66px;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%), #D9D9D9;
+  filter: drop-shadow(0px 6px 20px rgba(10, 136, 23, 0.25));
+  transform: translateY(0px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.target__calories {
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+.target__productos {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.target__product {
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.nutrition-title {
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  /* 140% */
+}
+
+.nutrition {
+  display: flex;
+  justify-content: space-between;
+}
+.nutrition__ingredient {
+  list-style: none;
+  padding: 0px;
+}
+.nutrition__calories {
+  margin: 11px;
+  color: #131313;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 176%;
+  /* 24.64px */
+  letter-spacing: 0.56px;
+}
+
+.container-ingredients {
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+}
+
+.container-button-ingredients {
+  display: flex;
+  justify-content: center;
+  outline: none;
+  padding-top: 32px;
 }
 
 /*# sourceMappingURL=main.min.css.map */
