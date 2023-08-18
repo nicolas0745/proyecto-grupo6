@@ -72,6 +72,7 @@ ul {
     color: #000;
     font-style: normal;
     padding: 12px 36px;
+    transition: background-color 250ms ease-in, border-color 250ms ease-in;
     &:hover {
         cursor: pointer;
         background-color: $hover-color;
@@ -86,9 +87,14 @@ ul {
     }
   }
 
+  .icon {
+    transition: fill 250ms ease-in;
+  }
+
   .link {
     color: $font-color;
     text-decoration: none;
+    transition: color 250ms ease-in;
     &:hover {
         cursor: pointer;
         color: $secondary-color;

@@ -5,22 +5,27 @@
         align-items: center;
     }
     &__cont-imgice {
+        position: relative;
         width: 280px;
         height: 130px;
         overflow: hidden;
-        margin-bottom: 80px;
+        // margin-bottom: 80px;
         border-radius: 8px;
+        z-index: 100;
         @include mobile {
             width: 440px;
             height: 204px;
+            top: -49px;
         }
         @include tablet {
             width: 100%;
             height: 327px;
+            top: -144px;
         }
         @include desktop {  
             width: 1013px;
             height: 422px;
+            top: -98px;
         }
     }
     &__imgice {
@@ -28,7 +33,7 @@
         height: 130px;
         object-fit: cover;
         transform: scale(1.1);
-        background: url(<path-to-image>), lightgray -14.181px -39.033px / 112.943% 160.051% no-repeat;
+        background: url('../images/icecream-group-mobile.jpg'), lightgray -14.181px -39.033px / 112.943% 160.051% no-repeat;
         @include mobile {
             width: 440px;
             height: 204px;

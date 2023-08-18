@@ -1,98 +1,171 @@
 .made {
     background-color: $principal-color;
-
+    &__container {
+        margin-bottom: 81px;
+        @include tablet {
+            margin-bottom: 204px;
+        }
+        @include desktop {
+            margin-bottom: 178px;
+        }
+    }
     &__title {
-        display: flex;
-        justify-content: center;
-        width: 481px;
-        height: 94px;
-        top: 60px;
-        left: 360px;
+        margin-top: 60px;
+        margin-bottom: 32px;
+        @include tablet {
+            margin-bottom: 72px;
+        }
+        @include desktop {
+            margin-bottom: 82px;
+        }
     } 
 
     &__title-trad {
-        width: 376px;
-        height: 37px;
-        top: 60px;
-        left: 412px;
-        font-family: Montserrat;
-        font-size: 30px;
-        font-weight: 800;
-        line-height: 37px;
-        letter-spacing: 0.04em;
         text-align: center;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        @include tablet {
+            font-size: 22px;
+            letter-spacing: 0.88px;
+        }
+        @include desktop {
+            font-size: 30px;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+        }
     }
     &__title-how {
-        width: 481px;
-        height: 45px;
-        top: 109px;
-        left: 360px;
-        font-family: Seymour One;
-        font-size: 36px;
+        text-align: center;
+        width: 200px;
+        margin: 0 auto;
+        font-family: $secondary-font;
+        font-size: 30px;
         font-weight: 400;
         line-height: 45px;
-        letter-spacing: 0.06em;
-        text-align: center;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        @include tablet {
+            font-size: 34px;
+            letter-spacing: 2.04px;
+            width: 700px;
+        }
+        @include desktop {
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 45px;
+            letter-spacing: 0.06em;
+        }
 
     }
     &__second-sec {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 99px;
+        @include tablet {
+            flex-direction: row;
+        }
     }
     &__shadow {
-        width: 490px;
-        height: 490px;
-        // background-color: $secondary-color;
+        width: 278px;
+        height: 278px;
         border-radius: 50%;
         background: linear-gradient(0deg, rgba(248, 210, 78, 0.70) 0%, rgba(248, 210, 78, 0.70) 100%), #D9D9D9;
         box-shadow: 0px 8px 30px 0px rgba(153, 114, 23, 0.25);
-        overflow: hidden;
+        margin-bottom: 62px;
+        @include tablet {
+            width: 330px;
+            height: 330px;
+        }
+        @include desktop {
+            width: 490px;
+            height: 490px;
+        }
     }
     &__img-cont {
-        width: 490px;
-        height: 490px;
+        width: 278px;
+        height: 278px;
         background-color: $principal-color;
         border-radius: 50%;
         transform: translatey(39px);
         overflow: hidden;
-    }
-        
-    &__vaca-container{
-            display: flex;
-            // justify-content: calc();
+        @include tablet {
+            width: 330px;
+            height: 330px;
+        }
+        @include desktop {
             width: 490px;
             height: 490px;
-            top: 236px;
-            left: 16px;
-            border-radius: 250px;
-            background: linear-gradient(0deg, #D9D9D9, #D9D9D9),
-            linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
-            box-shadow: 0px 8px 30px 0px #99721740;
+        }
     }
-        
-    &__vaca-container-mm {
-            display: flex;
-            justify-content: center;
-            width: 490px;
-            height: 490px;
-            top: 275px;
-            left: 17px;
-            border-radius: 1852.2000732421875px;
+    &__img {
+        width: 100%;
+        // object-fit: cover;
+    }
+    
+    &__desc-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // padding-left: 109px;
+        @include tablet {
+            padding-left: 70px;
+        }
+        @include desktop {
+            padding-left: 109px;
+        }
     }
     &__description{
-            display: flex;
-            justify-content: center;
-            width: 463px;
-            height: 111px;
-            top: 326px;
-            left: 616px;
-            font-family: Montserrat;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 28px;
-            letter-spacing: 0.04em;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        width: 220px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+        @include tablet {
+            font-size: 12px;
+            letter-spacing: 0.48px;
+            width: 334px;
             text-align: left;
+        }
+        @include desktop {
+            font-size: 16px;
+            letter-spacing: 0.04em;
+            width: 463px;
+        }
+        &:first-child {
+            margin-bottom: 4px;
+            @include tablet {
+                margin-bottom: 8px;
+            }
+        }
+        &:nth-child(2) {
+            margin-bottom: 54px;
+            // font-size: 14px;
+            line-height: 1.94;
+            @include tablet {
+                font-size: 12px;
+                margin-bottom: 36px;
+            }
+            @include desktop {
+                font-size: 12px;
+                line-height: 1.94;
+                margin-bottom: 54px;
+            }
+        }
     }
-
+    &__span {
+        @include tablet {
+            line-height: 1.94px;
+        }
+    }
+    &__button {
+        width: 164px;
+    }
     &__propiedades {
             display: flex;
             justify-content: center;
@@ -103,26 +176,80 @@
     }
     &__list {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 32px;
+        @include tablet {
+            gap: 80px;
+            flex-direction: row;
+        }
+        @include desktop {
+            gap: 32px;
+        }
     }
-    &__text-721 {
-            display: flex;
-            justify-content: center;
-            width: 98px;
-            height: 71px;
-            top: 915px;
-            left: 151px;
-            font-family: Montserrat;
-            font-size: 58px;
-            font-weight: 700;
-            line-height: 71px;
-            letter-spacing: 0.04em;
-            text-align: center;
-            background: #FCFCFC;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 230px;
+        @include tablet{
+            width: calc((100% - 160px) / 3);
+        }
+        @include desktop {
+            width: calc((100% - 64px) / 3);
+        }
     }
     &__icon-cont {
         background-color: $secondary-color;
         width: 50px;
         height: 50px;
         border-radius: 50%;
+        padding: 7px;
+        margin-bottom: 16px;
+        @include tablet {
+            margin-bottom: 32px;
+        }
+        @include desktop {
+            margin-bottom: 40px;
+        }
+    }
+    &__list-svg {
+        width: 36px;
+        height: 36px;
+    }
+    &__text-conten {
+        // flex-shrink: 0;
+        // color: #FCFCFC;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.76;
+        letter-spacing: 0.32px;
+        @include tablet {
+            font-size: 14px;
+            line-height: 1.74;
+        }
+        @include desktop {
+            font-size: 16px;
+        }
+    }
+    &__weight {
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2.32px;
+            margin-bottom: 16px;
+            @include tablet {
+                font-size: 48px;
+                letter-spacing: 1.92px;
+                margin-bottom: 12px;
+            }
+            @include desktop {
+                font-size: 58px;
+            }
     }
 }

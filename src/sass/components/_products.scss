@@ -1,5 +1,4 @@
 .products {
-    background-image: url('./images/ice-cream.jpg');
     &__subtitle {
         color: #131313;
         text-align: center;
@@ -55,7 +54,6 @@
     }
     &__item {
         border-radius: 24px;
-        // width: 100%;
         width: 280px;
 
         &--green {
