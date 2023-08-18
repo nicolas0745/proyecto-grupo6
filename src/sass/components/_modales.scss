@@ -19,10 +19,12 @@
     padding: 28px;
     position: relative;
     width: 280px;
-    height: 991px;
+    // height: 991px;
+    height: 90vh;
     border-radius: 10px;
     border: 2px solid #F8D24E;
     background: #FCFCFC;
+    overflow-y: scroll;
     @include tablet {
         width: 568px;
         height: 644px;
@@ -434,16 +436,16 @@
 .ingredients {
     position: relative;
     width: 280px;
-    height: 968px;
+    height: 90vh;
     border-radius: 10px;
     border: 2px solid #F8D24E;
     background: #FCFCFC;
     flex-direction: column;
     display: flex;
     padding: 20px;
+    overflow-y: scroll;
     @include tablet {
         width: 568px;
-        height: 996px;
         padding: 40px;
     }
 
