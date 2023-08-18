@@ -1,0 +1,199 @@
+.products {
+    &__subtitle {
+        color: #131313;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-transform: uppercase;
+        padding-top: 60px;
+        margin-bottom: 12px;
+        @include tablet {
+            font-size: 22px;
+        }
+        @include desktop {
+            font-size: 30px;
+        }
+    }
+    &__title {
+        color: #131313;
+        text-align: center;
+        font-family: Seymour One;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        margin-bottom: 152px;
+        @include tablet {
+            margin-bottom: 192px;
+            font-size: 34px;
+        }
+        @include desktop {
+            margin-bottom: 277px;
+            font-size: 36px;
+        }
+    }
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+        @include tablet {
+            flex-direction: row;
+            justify-content: center;
+            gap: 16px;
+        }
+        @include desktop {
+            gap: 29px;
+        }
+    }
+    &__item {
+        border-radius: 24px;
+        width: 280px;
+
+        &--green {
+            background-color: #AEC6A5;
+        }
+
+        &--yellow {
+            background-color: #EFD478;
+        }
+
+        &--orange {
+            background-color: #D6936D;
+        }
+        
+        &:not(:last-child) {
+                margin-bottom: 161px;
+                @include tablet {
+                    margin-bottom: 0;
+                }
+        }
+        @include mobile {
+            width: 320px;
+        }
+        @include tablet {
+            width: calc((100% - 32px) / 3);
+            min-width: 224px;
+        }
+        @include desktop {
+            width: calc((100% - 58px) / 3);
+        }
+    }
+}
+
+.product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 420px;
+    @include mobile {
+        height: 428px;
+    }
+    @include desktop {
+        height: 536px;
+    }
+    &__translate {
+        transform: translateY(-110px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include desktop {
+            transform: translateY(-150px);
+        }
+    }
+    &__back-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        @include desktop {
+            width: 302px;
+            height: 302px;
+        }
+        &--green {
+            background: linear-gradient(0deg, rgba(156, 190, 143, 0.70) 0%, rgba(156, 190, 143, 0.70) 100%), #D9D9D9;
+            filter: drop-shadow(0px 5.342193126678467px 20.033222198486328px rgba(10, 136, 23, 0.25));
+        }
+        &--yellow {
+            background: linear-gradient(0deg, rgba(248, 210, 78, 0.70) 0%, rgba(248, 210, 78, 0.70) 100%), #D9D9D9;
+            filter: drop-shadow(0px 5.403973579406738px 20.26490020751953px rgba(153, 114, 23, 0.25));
+        }
+        &--orange {
+            background: linear-gradient(0deg, rgba(213, 117, 63, 0.70) 0%, rgba(213, 117, 63, 0.70) 100%), #D9D9D9;
+            filter: drop-shadow(0px 5.413332939147949px 20.299999237060547px rgba(0, 0, 0, 0.25));
+        }
+    }
+    &__container-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;   
+        transform: translateY(-12px);
+        object-fit: contain;
+        @include desktop {
+            transform: translateY(-16px);
+        }
+    }
+    &__img {
+        width: 100%;   
+        height: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+    &__title {
+        color: #131313;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        justify-self: flex-start;
+        @include desktop {
+            margin-bottom: 66px;
+        }
+    }
+    &__description {
+        width: 200px;
+        height: 175px;
+        color: #131313;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.76;
+        letter-spacing: 0.56px;
+    }
+    &__arrow {
+        position: absolute;
+        bottom: 0;
+        @include tablet {
+            bottom: 12px;
+        }
+        @include desktop {
+            bottom: 40px;
+        }
+    }
+    &__icon {
+        width: 40px;
+        height: 16px;
+        margin-bottom: 16px;
+        // @include tablet {
+        //     transform: translateY(-58px);
+        // }
+        // @include desktop {
+        //     transform: translateY(-126px)
+        // }
+    }
+}

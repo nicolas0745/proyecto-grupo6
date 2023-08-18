@@ -1,0 +1,132 @@
+.footer {
+    background-color: $principal-color;
+    @include tablet {
+        padding-top: 35px;
+    }
+    @include desktop {
+        padding-top: 44px;
+    }
+    &__principal {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+        border-bottom: 1px solid $white-color;
+        @include tablet {
+            flex-direction: row;
+            padding-bottom: 32px;
+        }
+        @include desktop {
+            padding-bottom: 60px;
+        }
+    }
+    &__text-cont {
+        padding-bottom: 60px;
+        @include tablet {
+            padding-bottom: 0;
+        }
+    }
+    &__text {
+        color: $white-color;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        width: 232px;
+        &:nth-child(2) {
+            font-size: 34px;
+            letter-spacing: 1.36px;
+            width: 200px;
+            @include tablet {
+                font-size: 48px;
+            }
+            @include desktop {
+                font-weight: 700;
+                font-size: 58px;
+                width: 500px;
+            }
+        }
+        @include tablet {
+            font-size: 26px;
+            letter-spacing: 1.04px;
+            width: 352px;
+            margin-bottom: 0;
+        }
+        @include desktop {
+            font-size: 34px;
+            width: 600px;
+            font-weight: 400;
+        }
+    }
+    &__social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @include tablet {
+            width: 100%;
+            align-items: flex-end;
+            justify-content: flex-end;
+            padding-bottom: 28px;
+        }
+        @include desktop {
+            padding-bottom: 0;
+        }
+    }
+    &__social-icons {
+        margin-bottom: 20px;
+        display: flex;
+        gap: 20px;
+    }
+    &__rigths {
+        color: #7A7A7A;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.52;
+        padding: 20px;
+        width: 197px;
+        margin: 0 auto;
+        @include tablet {
+            width: 400px;
+        }
+        @include desktop {
+            font-size: 16px;
+        }
+    }
+    &__social-text {
+        color: $black-color;
+        text-align: right;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.86;
+        &--span {
+            color: $white-color;
+        }
+        &:hover {
+            .footer__social-text--span {
+                color: $secondary-color;
+            }
+        }
+
+    }
+    &__social-icon {
+        width: 34px;
+        height: 34px;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        padding: 5px;
+        &:hover {
+            .icon-social {
+            fill: $white-color;
+            }
+        }
+    }
+}
+.icon-social {
+    fill: $principal-color;
+    width: 24px;
+    height: 24px;
+}
